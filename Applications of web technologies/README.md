@@ -5,12 +5,7 @@
 * **Key Topics:** Web application architecture, dynamic web pages, markup validation, and client-side scripting.
 * **Goal:** Master front-end development principles and build interactive web applications.
 
----
-
 ## 📸 Screenshots
 
 ### Main Page
-![Main Page](screenshots/main-page.png)
-
-### Articles Section
-![Articles](screenshots/articles.png)
+![Main Page](Screenshots/Screenshot 2026-10-31 174531.png)
