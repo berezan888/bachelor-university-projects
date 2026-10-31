@@ -1,4 +1,4 @@
-# 📊 Introduction to Business Informatics (UHI) & Project MAU
+# 📊 Introduction to Business Informatics and Project MAU
 
 * **Course Topic:** Information Systems, Business Problem Solving, Knowledge Management & Strategic Analysis.
 * **Project Concept:** **MAU** — conceptual design and business model for a smart menstrual cycle & women's health tracking app.
