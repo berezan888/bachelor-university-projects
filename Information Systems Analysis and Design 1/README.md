@@ -32,12 +32,4 @@ Our team developed a comprehensive analysis and design documentation for a digit
 5. **UX Design & Prototyping:** 
    * Designed information architecture and **Low-Fidelity (Lo-Fi) UI prototypes** covering the landing pages, service catalog, user profiles, and galleries.
 6. **Pilot Deployment Case:** 
-   * Structured the three core deployment components: **Organization** (process automation), **People** (roles and responsibilities), and **Technology** (Oracle SQL, C++ backend, web/cloud infrastructure)[cite: 4].
-
----
-
-## 🛠️ Repository Structure
-
-* `docs/` — Full project documentation (`IS_pre_autoservis_final.docx`)[cite: 4].
-* `diagrams/` — Source files for UML Use Cases and BPMN process models.
-* `prototypes/` — Lo-Fi wireframes and UI layout designs.
+   * Structured the three core deployment components: **Organization** (process automation), **People** (roles and responsibilities), and **Technology** (Oracle SQL, C++ backend, web/cloud infrastructure).
