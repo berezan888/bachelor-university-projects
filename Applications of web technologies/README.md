@@ -4,3 +4,13 @@
 * **Core Technologies:** HTML5, CSS3, JavaScript (DOM, AJAX), XML, and HTTP protocol.
 * **Key Topics:** Web application architecture, dynamic web pages, markup validation, and client-side scripting.
 * **Goal:** Master front-end development principles and build interactive web applications.
+
+---
+
+## 📸 Screenshots
+
+### Main Page
+![Main Page](screenshots/main-page.png)
+
+### Articles Section
+![Articles](screenshots/articles.png)
