@@ -1,0 +1,1071 @@
+h1{
+    color: white;
+    font-size: 237.5%;
+    font-weight: 1000; /*Насыщенность шрифта*/
+
+}
+.h1i{
+    color: #d0d8df;
+    text-shadow:
+            0.125rem 0.125rem 0.25rem #4f4842,         /* Тень вправо и вниз */
+            -0.125rem -0.125rem 0.25rem rgb(79, 72, 66), /* Тень влево и вверх */
+            0.125rem -0.125rem 0.25rem rgb(79, 72, 66), /* Тень вправо и вверх */
+            -0.125rem 0.125rem 0.25rem rgb(79, 72, 66); /* Тень влево и вниз */
+
+}
+h2{
+    color: #000;
+    font-weight: 900;
+
+}
+p{
+    line-height: 143.75%; /*Межстрочный интервал*/
+    color: #000000;
+    font-family: Candara, sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+
+}
+a{
+    color: #1a73e8;
+    font-weight: 900;
+    font-family: Candara, sans-serif;
+}
+strong{
+    font-weight: 900;
+    color: #93b8b1;
+    font-size: larger;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(176, 198, 186);
+
+}
+.strongi{
+    font-weight: 900;
+    color: #fd7bdc;
+    font-size: larger;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(176, 198, 186);
+}
+.odkaz_dom{
+    font-weight: 900;
+    font-size: 120%;
+}
+table {
+    width: 100%; /*ширина элемента*/
+    border-collapse: collapse;/*слияние границ таблицы*/
+    font-family: Candara, sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+
+    min-width: 20rem; /* Минимальная ширина таблицы */
+    max-width: 100rem;
+}
+th, td {
+    padding:  0.7%; /*внутренний отступ*/
+    border: thin solid #ffffff; /*форматирование границ элемента*/
+}
+thead {
+    background-color: #9cb7ff;
+}
+ul, ol {
+    margin: 2% 0; /*внешний отступ*/
+    font-family: Candara, sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+}
+canvas {
+    border: thin solid #000;
+}
+.author-info {
+    text-align: center;
+    margin-top: 1.25em;
+}
+.aut_a{
+    color: #477b9c;
+    text-decoration: none;
+}
+canvas {
+    border: 0.0625em solid #ffeca8;
+}
+.canvas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer {
+
+    background: center / cover url('fig/mountin.jpg');
+    text-align: center;
+    padding: 1rem;
+    font-size: xx-small;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbbce3;
+    text-align: justify; /*Выравнивание по горизонтали*/
+    padding: 1rem;
+    display: grid;
+
+}
+.indexbody{
+    background-color: #ffeca8;
+}
+.art2_body{
+    background-color: rgb(197, 197, 202);
+}
+.ar1_body{
+    background-color: #d4ebf5;
+}
+.body3{
+    background-color: #a9a8e3;
+}
+.body5{
+    background-color: #fbc4f4;
+}
+.body4{
+    background-color: #f8e9bb;
+}
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Ensures space between the logo and navigation */
+    align-items: center;
+    background: center / cover url('fig/mountin.jpg'); /* Dark background for the header */
+    color: #bbbce3;
+    padding: 0.1em 1em;
+
+}
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    min-width: 20rem; /* Минимальная ширина контейнера */
+    max-width: 100rem;
+}
+.text-content {
+    flex: 1; /* Занимает оставшуюся ширину контейнера */
+    background-color: #ffffff; /* Цвет фона для примера */
+    padding: 1rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+
+    min-height: 15rem;
+    max-height: 40rem;
+}
+.logo{
+    margin: 0;
+}
+nav ul {
+    list-style: none; /* Removes default bullets from list */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Aligns the navigation items horizontally */
+}
+nav ul li {
+    margin-left: 2em; /* Adds space between navigation items */
+}
+nav ul li a {
+    color: #bbbce3;
+    text-decoration: none; /* Removes underline from links */
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Фон для подкладки */
+    padding: 0.5em 1em; /* Отступы для увеличения "кнопки" */
+    border-radius: 0.5rem; /* Скругленные углы */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Анимация плавного изменения */
+}
+nav ul li a:hover {
+    color: #ffffff; /* Changes color on hover */
+    background-color: #ffd52f; /* Фон для подкладки */
+}
+aside {
+    width: 80%; /* Sidebar width */
+    background-color: #d5d6fd;
+    padding: 1em;
+    min-height: 100vh; /* Full height of the viewport */
+    background-repeat: repeat-y;
+    background: url("fig/cloudy.png") ;
+    background-size: 18rem 18rem;
+}
+.asidindx{
+    background: url("fig/cloudy.png") ;
+    background-size: 20rem 20rem;
+}
+.asid2{
+    background: url("fig/coin2.png");
+    background-size: 13.5rem 13.5rem; /* Уменьшенный размер иконки */
+    width: 51%;
+}
+.asid1ar{
+    background: url("fig/magic.png");
+    width: 51%;
+    background-size: 14rem 14rem;
+}
+.asid3ar{
+    background: url("fig/kariera.png");
+    width: 24.2%;
+    background-size: 9.65rem 9.65rem;
+}
+.asid5{
+    background: url("fig/piggy.png");
+    width: 28%;
+    background-size: 9.6rem 9.6rem;
+}
+.asid4{
+    background: url("fig/love.png");
+    width: 28%;
+    background-size: 12.5rem 12.5rem;
+}
+.section_head1 {
+
+    background: center / cover url('/fig/hhhhh.jpeg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+    position: relative;
+
+}
+
+
+.hero-section2 {
+    background: center / cover url('fig/adu.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+    position: relative;
+}
+.hero-section3 {
+    background: center / cover url('fig/friends.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+}
+.section_head4{
+    background: center / cover url('fig/fff.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: #000000 0.125em 0.125em 0.2rem;
+    position: relative;
+}
+.hero-section_i {
+    background: center / cover url('fig/happy.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+    position: relative;
+}
+.section_head5 {
+    background: center / cover url('fig/pig.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+    position: relative;
+}
+
+/* Для телефонов */
+@media (max-width: 480px) and (min-width: 320px){
+    .zagolovok {
+        font-size: 100%;
+    }
+    body {
+        font-size: 60%;
+        margin: 0 0;
+    }
+    .coin {
+        width: 3rem;
+        height: 3rem;
+    }
+    aside {
+        display: none; /* Скрыть боковую панель на мобильных устройствах, если это необходимо */
+    }
+    main{
+        width: 100%; /* Hlavný obsah zaberá celú šírku */
+    }
+    img {
+        max-width: 100%; /* Obrázky sa prispôsobia šírke obrazovky */
+        height: auto; /* Udržuje proporcie obrázkov */
+    }
+    .shrift{
+        font-size: small;
+    }
+    .link-container {
+        font-size: small;
+    }
+    .strongi{
+        font-size: medium;
+    }
+    .link-box a {
+        font-size: smaller;
+    }
+    .imn{
+        width: 30%;
+    }
+}
+
+/* Для планшетов */
+@media (max-width: 768px) and (min-width: 480px){
+    .zagolovok {
+        font-size: 130%;
+        margin: 0 0;
+    }
+    body {
+        font-size: 70%;
+
+    }
+    .coin {
+        width: 3.5rem; /* Размер монеты (80px) */
+        height: 3.5rem; /* Размер монеты (80px) */
+    }
+    aside {
+        display: none; /* Скрыть боковую панель на мобильных устройствах, если это необходимо */
+    }
+    .shrift{
+        font-size: medium;
+    }
+    .imn{
+        width: 40%;
+    }
+    aside {
+        display: none; /* Скрыть боковую панель на мобильных устройствах, если это необходимо */
+    }
+}
+/* Для экранов ноутбуков (до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px){
+    .zagolovok {
+        font-size: 190%;
+        margin: 0 0;
+    }
+    body {
+        font-size: 80%;
+
+    }
+    .coin {
+        width: 4.5rem; /* Размер монеты (80px) */
+        height: 4.5rem; /* Размер монеты (80px) */
+    }
+    main {
+        flex: 1; /* Hlavný obsah zaberá väčšinu priestoru */
+        padding: 2rem; /* Padding pre hlavnú sekciu */
+    }
+    img {
+        max-width: 100%; /* Obrázky sa prispôsobia */
+        height: auto; /* Udržuje proporcie */
+    }
+    aside {
+        display: none; /* Скрыть боковую панель на мобильных устройствах, если это необходимо */
+    }
+}
+/* Для больших экранов (до 1920px) */
+@media (max-width: 1920px) and (min-width: 1024px){
+    .zagolovok {
+        font-size: 210%;
+        margin: 0 0;
+    }
+    body {
+        font-size: 100%;
+
+    }
+    .coin {
+        width: 5rem;
+        height: 5rem;
+    }
+    main {
+        flex: 1; /* Hlavný obsah zaberá väčšinu priestoru */
+        padding: 2rem; /* Padding pre hlavnú sekciu */
+    }
+    img {
+        max-width: 100%; /* Obrázky sa prispôsobia */
+        height: auto; /* Udržuje proporcie */
+    }
+}
+
+
+#navigacia {
+    background-color: #f8f9fa; /* Цвет фона навигации */
+    padding: 1.25rem; /* Отступы вокруг навигации (20px) */
+    border-radius: 0.5rem; /* Скругление углов (8px) */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для навигации (0px 4px 10px) */
+}
+
+#navigacia h3 {
+    margin-bottom: 0.9375rem; /* Отступ снизу заголовка (15px) */
+    color: #ff7cdd;
+    font-size: 3rem; /* Размер шрифта (300%) */
+    margin-top: 0.0625rem; /* Отступ сверху (1px) */
+    text-shadow:
+            0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень вправо и вниз (2px 2px 5px) */
+            -0.125rem -0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень влево и вверх (-2px -2px 5px) */
+            0.125rem -0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень вправо и вверх (2px -2px 5px) */
+            -0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3); /* Тень влево и вниз (-2px 2px 5px) */
+}
+.link-container {
+    display: flex; /* Flexbox для размещения карточек */
+    flex-direction: column; /* Размещаем карточки по вертикали */
+    gap: 0.625rem; /* Расстояние между карточками (10px) */
+}
+.link-box {
+    padding: 0.9375rem; /* Отступы внутри карточки (15px) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для карточки (0px 4px 10px) */
+    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавные эффекты */
+
+}
+.link-box:hover {
+    background-color: #9ba6bf;
+    transform: translateY(-0.3125rem); /* Легкий подъем карточки при наведении (5px) */
+}
+.link-box a {
+    color: #477b9c; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 1.125rem; /* Размер текста (18px) */
+    display: block; /* Ссылка занимает всю карточку */
+    transition: color 0.3s ease; /* Плавная смена цвета */
+    position: relative; /* Для выплывающей линии */
+}
+.link-box a::after {
+    content: ''; /* Псевдоэлемент */
+    position: absolute;
+    left: 0;
+    bottom: -0.3125rem; /* Линия будет появляться чуть ниже текста (-5px) */
+    width: 100%;
+    height: 0.125rem; /* Высота линии (2px) */
+    background-color: #477b9c; /* Цвет линии */
+    transform: scaleX(0); /* Изначально линия скрыта */
+    transition: transform 0.3s ease; /* Плавный эффект появления */
+}
+.link-box:hover a {
+    color: white; /* Изменение цвета ссылки при наведении на карточку */
+}
+.link-box a:hover::after {
+    transform: scaleX(1); /* Линия увеличивается по ширине при наведении */
+}
+.text-with-background {
+    background-color: #f0f8ff; /* Цвет подложки */
+    padding: 0 1rem; /* Отступы внутри подложки (0% 16px будет 0 1rem) */
+    margin-top: 1rem; /* Отступ сверху (1rem) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    display: inline-block; /* Подложка будет по размеру текста */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для глубины (0px 4px 10px) */
+    font-size: 1.125rem; /* Размер шрифта (18px) */
+    color: #477b9c; /* Цвет текста */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.text-with-background:hover {
+    transform: scale(1.05); /* Увеличение текста и подложки */
+    background-color: #ff7cdd; /* Слегка меняем цвет подложки */
+    box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2); /* Увеличиваем тень (0px 8px 15px) */
+    color: #fff; /* Цвет текста при наведении */
+}
+.shrift{
+    color: inherit;
+    font-style: italic
+}
+/*article 2*/
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+}
+.liar2 {
+    padding: 0.625rem 0.9375rem; /* Отступы (10px 15px) */
+    background-color: #f8f1aa; /* Цвет фона */
+    margin-bottom: 0.625rem; /* Отступ снизу (10px) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    position: relative; /* Для позиционирования выпадающей секции */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+li:hover {
+    background-color: #f8de9e; /* Изменение фона при наведении */
+}
+.extra-section {
+    max-height: 0; /* Изначально скрыта */
+    overflow: hidden; /* Скрывает содержимое при максимальной высоте 0 */
+    background-color: #e4dde1; /* Цвет фона */
+    padding: 0.625rem; /* Отступы (10px) */
+    margin-top: 0.625rem; /* Отступ сверху (10px) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    transition: max-height 0.5s ease-out, opacity 0.3s ease-out; /* Плавные переходы */
+    opacity: 0; /* Изначально прозрачна */
+}
+li:hover .extra-section {
+    max-height: 9.375rem; /* Высота, когда секция появляется (150px) */
+    opacity: 1; /* Появление секции */
+}
+
+.numlis2 {
+    padding: 0.3125rem; /* Отступы (5px) */
+    border-radius: 0.625rem; /* Скругленные углы (10px) */
+    max-width: 200%; /* Максимальная ширина, оставляем без изменений, если это проценты */
+}
+.numlis2 ol {
+    list-style: none; /* Убираем стандартные номера */
+    counter-reset: list-counter; /* Сбрасываем счётчик для кастомных номеров */
+    padding-left: 0;
+}
+.numlis2 li {
+    counter-increment: list-counter; /* Инкрементируем счётчик для каждого <li> */
+    margin-bottom: 0.9375rem; /* Отступ снизу (15px) */
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem; /* Расстояние между элементами (10px) */
+    padding: 0.9375rem; /* Отступы внутри (15px) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    background-color: #a9a9ae; /* Фон для каждого элемента списка */
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+    transition: background-color 0.3s ease;
+}
+.numlis2 li:hover {
+    background-color: #89898e; /* Изменение цвета при наведении */
+}
+.numlis2 li::before {
+    content: counter(list-counter) "."; /* Нумерация */
+    border-radius: 25%; /* Круглый номер */
+    padding: 0.5rem 0.75rem; /* Отступы (8px 12px) */
+    font-weight: bold;
+    font-size: 1.2rem; /* Размер шрифта (1.2em) */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.5rem; /* Минимальная ширина (40px) */
+    text-align: center;
+}
+.numlis2 strong {
+    color: #e8bf60; /* Цвет для заголовков */
+    font-size: 1.1rem; /* Размер шрифта (1.1em) */
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(182, 150, 75); /* Тень текста (2px 5px) */
+    font-weight: 600; /* Жирный шрифт для выделения */
+}
+.numlis2 li p {
+    margin: 0;
+    color: #5a6673; /* Цвет текста */
+    line-height: 1.5;
+}
+.otsek {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 1.25rem 0; /* Отступы сверху и снизу (20px) */
+    border-radius: 0.5rem; /* Скругление углов (8px) */
+    background-color: #e6f1f6; /* Цвет фона */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Тень */
+}
+.otsek li {
+    position: relative; /* Относительное позиционирование */
+    padding: 1.25rem; /* Внутренние отступы (20px) */
+    margin: 0.3125rem; /* Внешние отступы (5px) */
+    border-left: 0.25rem solid #fdbb5a; /* Левое окаймление */
+    background-color: #fff2b4; /* Цвет фона элемента списка */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    overflow: hidden; /* Обрезаем контент */
+    cursor: pointer; /* Курсор в виде указателя */
+}
+.otsek li:hover {
+    background-color: #fddab3; /* Цвет фона при наведении */
+}
+.otsek li strong {
+    color: #67badd; /* Цвет текста */
+    font-size: 1.1rem; /* Размер шрифта (1.1em) */
+    margin-bottom: 0.5rem; /* Отступ снизу (8px) */
+    display: block; /* Блоковое отображение */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: color 0.3s ease; /* Плавный переход цвета */
+}
+.otsek li:hover strong {
+    color: #fbba5a; /* Цвет текста при наведении */
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(255, 231, 100); /* Тень текста (2px 5px) */
+}
+/* Добавляем скрытый текст */
+.otsek li .content {
+    opacity: 0; /* Изначально скрыто */
+    max-height: 0; /* Изначально высота 0 */
+    overflow: hidden; /* Обрезаем контент */
+    transition: max-height 0.5s ease, opacity 0.5s ease; /* Плавный переход для высоты и прозрачности */
+    margin-top: 0.625rem; /* Отступ сверху (10px) */
+}
+/* Анимация при наведении на <strong> */
+.otsek li strong:hover + .content {
+    opacity: 1; /* Появление текста */
+    max-height: 18.75rem; /* Высота при показе (300px) */
+}
+.art3_sec {
+    padding: 1.875rem; /* Отступы (30px) */
+    border-radius: 0.75rem; /* Скругление углов (12px) */
+    background: #e3e6ea; /* Цвет фона */
+    box-shadow: 0 0.375rem 0.9375rem rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+}
+/* Эффект при наведении на секцию */
+.art3_sec:hover {
+    transform: translateY(-0.3125rem); /* Подъем при наведении */
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15); /* Увеличение тени */
+}
+/* Оформление заголовков */
+.art3_sec h3 {
+    font-size: 1.6rem; /* Размер шрифта (1.6em) */
+    color: #fdb34f; /* Цвет текста */
+    margin-bottom: 0.625rem; /* Отступ снизу (10px) */
+    transition: color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+    cursor: pointer; /* Курсор в виде указателя */
+    text-shadow: 0.125rem 0.125rem 0.3125rem #ffeb00; /* Тень текста */
+}
+/* Эффект при наведении на заголовок */
+.art3_sec h3:hover {
+    color: #fde767; /* Цвет текста при наведении */
+    transform: scale(1.05); /* Увеличение при наведении */
+    text-shadow: 0.125rem 0.125rem 0.3125rem #ff5b00; /* Тень текста при наведении */
+}
+/* Оформление абзацев */
+.art3_sec p {
+    font-size: 1rem; /* Размер шрифта (1em) */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: #555; /* Цвет текста */
+    padding: 0.625rem 0; /* Отступы (10px) */
+    border-bottom: 0.0625rem solid #d9e2ec; /* Нижняя граница */
+}
+/* Последний абзац без границы */
+.art3_sec p:last-child {
+    border-bottom: none; /* Убираем нижнюю границу */
+}
+.coin-container {
+    display: flex; /* Flexbox для размещения */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    position: relative; /* Относительное позиционирование */
+    animation: dropAndRoll 3s ease-in-out infinite; /* Анимация */
+    margin-top: 10.625rem; /* Отступ сверху (17%) */
+}
+.coin {
+    width: 5rem; /* Размер монеты (80px) */
+    height: 5rem; /* Размер монеты (80px) */
+    transform-origin: center; /* Центр вращения */
+}
+/* Анимация падения и прокатывания монеты */
+@keyframes dropAndRoll {
+    0% {
+        transform: translateY(-12.5rem) rotateX(0deg); /* Начало падения (-200px) */
+    }
+    30% {
+        transform: translateY(0) rotateX(720deg); /* Падение с вращением */
+    }
+    40% {
+        transform: translateX(0) rotate(0deg); /* Подготовка к прокатыванию */
+    }
+    100% {
+        transform: translateX(18.75rem) rotate(1440deg); /* Прокатывание монеты (300px) */
+    }
+}
+
+
+/* Общие стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.25rem 0; /* 20px */
+    font-size: 1rem; /* 16px */
+    text-align: center;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+    background-color: #beb6db;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.25rem; /* 20px */
+    color: #000000;
+    padding: 0.9375rem; /* 15px */
+    caption-side: top;
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Заголовки таблицы */
+thead th {
+    background-color: #f8f4f3;
+    color: #000000;
+    padding: 0.9375rem; /* 15px */
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(113, 99, 163); /* 2px 2px 5px */
+    border: 0.0625rem solid rgba(221, 221, 221, 0); /* 1px */
+    font-size: 1.125rem; /* 18px */
+}
+
+/* Тело таблицы и строки */
+tbody td {
+    padding: 0.625rem; /* 10px */
+    border: 0.0625rem solid rgba(97, 16, 16, 0); /* 1px */
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Анимация строки при наведении */
+tbody tr:hover {
+    background-color: #dcd9e9;
+    transform: scale(1.02);
+}
+
+/* Чередование цвета для строк */
+tbody tr:nth-child(even) {
+    background-color: #bdb5da;
+}
+
+/* Футер таблицы */
+tfoot td {
+    padding: 0.625rem; /* 10px */
+    font-weight: bold;
+    background-color: #f6f2f1;
+    color: #000000;
+}
+
+/* Заголовок с увеличением при наведении */
+caption:hover {
+    font-size: 1.375rem; /* 22px */
+    color: #beb6db;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(247, 255, 112); /* 2px 2px 5px */
+    transform: translateY(-0.125rem); /* -2px */
+}
+
+/* Стили для формы */
+.styled-form {
+    background: #f6f7f8;
+    border: 2px solid #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Candara, sans-serif;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto 0;
+}
+
+/* Стили для элементов формы */
+.styled-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5c5c5c;
+    font-family: Candara, sans-serif;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.styled-form p {
+    margin-top: auto;
+    color: #fd7bdc; /* Цвет текста */
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(195, 228, 255);
+
+}
+
+/* Стили для "Váš názor" */
+form.styled-form .label-feedback {
+    color: #fd7bdc; /* Цвет текста */
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: Calibri, sans-serif;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(195, 228, 255);
+
+}
+
+/* Дополнительный стиль для мобильных устройств */
+@media (max-width: 600px) {
+    .textarea-feedback {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+/* Стили для инпутов и текстовых полей */
+.styled-form input,
+.styled-form textarea {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Candara, sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Подсказки внутри полей ввода */
+.styled-form input::placeholder,
+.styled-form textarea::placeholder {
+    color: #888888;
+    font-style: italic;
+}
+
+/* Стили для кнопок */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.styled-form .submit-button,
+.styled-form .reset-button {
+    background: #ec5ec7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.styled-form .submit-button:hover {
+    background: #d14caf;
+}
+
+.styled-form .reset-button:hover {
+    background: #c74cae;
+}
+
+/* Анимация фокуса на инпуте */
+.styled-form input:focus,
+.styled-form textarea:focus {
+    border-color: #ec5ee0;
+    box-shadow: 0 0 5px rgba(236, 94, 199, 0.5);
+}
+
+/* Радио кнопки и чекбоксы: блоки внутри групп */
+.styled-form .radio-group,
+.styled-form .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Радио кнопки и чекбоксы */
+.styled-form input[type="radio"],
+.styled-form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+/* Размещение текста рядом с радио кнопками и чекбоксами */
+.styled-form label input[type="radio"],
+.styled-form label input[type="checkbox"] {
+    margin-left: 10px;
+    vertical-align: middle; /* Выравнивание по вертикали */
+}
+
+/* Для каждого абзаца с радио или чекбоксами */
+.styled-form p {
+    margin-bottom: 10px;
+}
+
+/* Убираем обводку у чекбоксов и радиокнопок */
+.styled-form input[type="checkbox"]:focus,
+.styled-form input[type="radio"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Опционально, стилизация чекбоксов и радиокнопок */
+.styled-form input[type="checkbox"],
+.styled-form input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+/* Стили для активного состояния чекбоксов и радиокнопок */
+.styled-form input[type="checkbox"]:checked,
+.styled-form input[type="radio"]:checked {
+    accent-color: #ec5ec7; /* Меняем цвет акцента на розовый */
+}
+
+@media (max-width: 600px) {
+    .styled-form {
+        padding: 15px; /* Уменьшаем отступы на мобильных устройствах */
+        margin: 20px auto;
+        max-width: 100%;
+    }
+
+    /* Уменьшаем шрифт для всех input, select, textarea */
+    .styled-form input,
+    .styled-form select,
+    .styled-form textarea,
+    .styled-form label,
+    .styled-form p {
+        font-size: 1rem; /* уменьшаем шрифт для всех текстовых полей и меток */
+    }
+
+    /* Уменьшаем шрифт для кнопок */
+    .form-buttons button {
+        font-size: 14px; /* уменьшаем шрифт кнопок */
+    }
+
+    /* Дополнительно, можно изменить размер textarea */
+    .styled-form textarea {
+        font-size: 14px; /* уменьшаем шрифт для текста в textarea */
+        width: 100%; /* делаем textarea адаптивным */
+    }
+
+    /* Параметры для p (текстов) */
+    .styled-form p {
+        font-size: 1.5rem;
+    }
+
+    /* Уменьшаем шрифт для "Váš názor" */
+    .styled-form .label-feedback {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+/* Валидные поля */
+.styled-form input:valid,
+.styled-form textarea:valid {
+
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Светящийся эффект */
+}
+
+/* Невалидные поля */
+.styled-form input:invalid,
+.styled-form textarea:invalid {
+    /* Красная рамка для невалидных полей */
+
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Светящийся эффект */
+}
+
+/* Убираем подсветку фокуса у радио и чекбоксов */
+.styled-form input[type="radio"]:focus,
+.styled-form input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: none; /* Убираем эффект подсветки */
+}
+
+/* Убираем подсветку при валидации для радио и чекбоксов */
+.styled-form input[type="radio"]:valid,
+.styled-form input[type="checkbox"]:valid,
+.styled-form input[type="radio"]:invalid,
+.styled-form input[type="checkbox"]:invalid {
+    box-shadow: none; /* Убираем эффект подсветки */
+}
+
+
+/* Общие стили для блока отзывов */
+.otzovy {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffb6eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для элемента отзыва */
+.feedback-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f5f6;
+    border: 1px solid #f2f3f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для первого отзыва, чтобы немного опустить его вниз */
+.feedback-item:first-child {
+    margin-top: 20px;  /* Добавляем отступ сверху */
+}
+
+/* Стили для заголовков в отзыве */
+.feedback-item p {
+    margin: 5px 0;
+}
+
+/* Стили для заголовков (текст в жирном начертании) */
+.feedback-item strong {
+    color: #333;
+}
+
+/* Стили для ссылок */
+.feedback-item a {
+    color: #fd7bdc;
+    text-decoration: none;
+}
+
+.feedback-item a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для даты отправки отзыва */
+.feedback-item em {
+    font-style: italic;
+    color: #777;
+}
+
+/* Стили для списка интересующих моментов */
+.features-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features-list li {
+    padding: 2px 0;
+}
+
+.features-list li:before {
+    content: "✔";
+    color: green;
+    padding-right: 8px;
+}
+
+/* Стили для секции "URL изображения" */
+.image-url {
+    font-style: italic;
+    color: #555;
+}
+
+/* Стили для секции "Váš názor" (отзывы) */
+.feedback-text {
+    color: #444;
+    line-height: 1.5;
+}
+.delete-feedback{
+    background: #ec5ec7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.delete-feedback:hover {
+    background: #d14caf;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}

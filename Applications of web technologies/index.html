@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Stefan Korecko" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet"
+          href="Blog.css"
+          media="screen" />
+    <link rel="shortcut icon" href="fig/cloudy.png" type="image/x-icon">
+    <title>My Blog about Trees and Other Things</title>
+
+</head>
+
+<body>
+
+
+<header>
+    <div class ="logo">
+        <a href="index.html">
+            <img src="fig/tungsten.png" alt="Website Logo" width="100" class="imn"> <!-- Логотип вместо заголовка -->
+        </a>
+    </div>
+    <div class="menu">
+        <button id="menuTitle">Menu</button>
+
+        <nav id="menuIts" class="menu mnHide">
+            <a href="#welcome">Welcome!</a>
+            <a href="#articles">Articles</a>
+            <a  href="#artInsert">Add article</a>
+            <a href="#opinions">Visitor opinions</a>
+            <a href="#addOpinion">Add your opinion</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<header class="hero-section_i">
+    <h1 class="h1i">Spôsoby, ako investovať do seba a zmeniť svoj život</h1>
+
+
+
+</header>
+<div class="container">
+    <aside class ="asidindx"></aside>
+    <div>
+
+
+
+
+<main id="router-view">
+
+
+</main>
+
+</div>
+<aside class = "asidindx"></aside>
+</div>
+
+<footer class="main">
+    <p>© 2024 Investovanie do Seba. Anna BEREZAN.</p>
+</footer>
+
+<!--Templates for html, dynamically inserted by the router -->
+
+<script id="template-welcome" type="text/template">
+    <article>
+
+        <div class="text-with-background">
+            <p class ="shrift">Blog sa venuje témam sebarozvoja, duševného zdravia a tomu, ako pozitívne myslenie môže ovplyvniť náš úspech a kvalitu života. Zameriava sa na investovanie do seba s cieľom dosiahnuť úspech a vytvoriť šťastný a plnohodnotný život, vrátane praktík sebalásky a starostlivosti o seba, ktoré pomáhajú rozvíjať osobný potenciál.</p>
+        </div>
+
+        <h2>Čo znamená investovať do seba?</h2>
+
+        <p>
+            Investovať do seba znamená venovať čas, úsilie a zdroje na zlepšenie svojich zručností, vedomostí a osobného rozvoja. Táto investícia sa môže výrazne vyplatiť z hľadiska kariérneho postupu a finančného rastu.
+
+            Keď investujete do svojich vedomostí a zručností, stanete sa konkurencieschopnejšími na trhu práce a objavíte nové príležitosti. Neustály rozvoj vám pomôže prispôsobiť sa zmenám, zlepšiť svoju výkonnosť a prijímať lepšie informované rozhodnutia. Okrem toho osobný rozvoj, ako napríklad zlepšenie sebadôvery a komunikačných zručností, môže viesť k lepšej interakcii s kolegami a budovaniu pevnejších vzťahov.
+
+            Zameraním sa na sebazdokonaľovanie budujete pevný základ pre budúci úspech.
+        </p>
+
+        <nav id="navigacia">
+            <h3><strong class ="strongi">V tomto blogu:</strong></h3>
+            <div class="link-container">
+                <div class="link-box">
+                    <a href="article1.html" >Začnite stanovením cieľov</a>
+                </div>
+                <div class="link-box">
+                    <a href="article2.html"  >Investujte do svojich financií</a>
+                </div>
+                <div class="link-box">
+                    <a href="article3.html" >Investujte do svojej kariéry</a>
+                </div>
+                <div class="link-box">
+                    <a href="article4.html" >Investujte do svojho osobného života</a>
+                </div>
+                <div class="link-box">
+                    <a href="article5.html">Investujte do seba dnes a vaše budúce ja vám poďakuje</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+
+    </article>
+</script>
+
+<script id="template-articles" type="text/template">
+    <div class="articles-container">
+        <div id="findArt" class="find-art-container">
+            <div class="form__group field">
+                <input type="text" class="form__field" id="tag" placeholder="Find article by tag:" name="tag" required />
+                <a href="#findArtbyTag" class="findTag" id="findArtbyTag">Find</a>
+            </div>
+        </div>
+
+        {{#articles}}
+        <article>
+            <h2><a href="{{detailLink}}">{{title}}</a></h2>
+            <p>{{content}}</p>
+            <p>by {{author}}</p>
+        </article>
+        {{/articles}}
+
+        <div class="pagination">
+            {{#hasPrevious}}
+            <a href="#articles/{{previousOffset}}/{{totalCount}}" id="prevButton">Previous</a>
+            {{/hasPrevious}}
+            {{#hasNext}}
+            <a href="#articles/{{nextOffset}}/{{totalCount}}" id="nextButton">Next</a>
+            {{/hasNext}}
+        </div>
+
+        <footer><a href="#menuTitle" class="linkAsButton">Up to the menu</a></footer>
+    </div>
+</script>
+<script id="template-articles-error" type="text/template">
+
+    <article>
+        <h2>Article(s) acquisition failed</h2>
+        <p>
+            {{errMessage}}
+        </p>
+    </article>
+    <footer><a href="#menuTitle" class="linkAsButton">Up to the menu</a></footer>
+
+</script>
+
+<script id="template-article" type="text/template">
+    <div class="article-template">
+        <article>
+            <h3>{{title}}</h3>
+            <p>by {{author}}</p>
+            {{#imageLink}}
+            <figure>
+                <img src="{{imageLink}}" alt="article figure" />
+            </figure>
+            {{/imageLink}}
+            <div class="content">{{{content}}}</div>
+            <p class="tags">Keywords: {{tags}}</p>
+
+            <div>
+                {{#comments}}
+                <div class="article-form-screen--comments">
+                    <div class="article-form-screen--comments-info">
+                        <h2>Author: {{author}}</h2>
+                        <p>Comment: {{text}}</p>
+                        <h3>Date: {{dateCreated}}</h3>
+                    </div>
+                </div>
+                {{/comments}}
+            </div>
+            <a id="addComment" href="#show" class="linkAsButton" onclick="openForm()">Add comment</a>
+
+            <div id="form-wrap" style="display:none;">
+                <h3>New comment</h3>
+                <div class="form__group field">
+                    <label class="form__label author-label" for="author"><span> Author: </span></label>
+                    <input type="text" class="form__field" name="author" id="author3" size="50" maxlength="100" placeholder=""/>
+                </div>
+                <div class="form__group field">
+                    <label class="form__label comm-label" for="title"><span> Comment: </span></label>
+                    <input type="text" class="form__field" name="title" id="title3" size="50" maxlength="100"
+                           pattern="\S[\S\s]*" placeholder="e.g. Good."/>
+                </div>
+                <button class="linkAsButton" onclick="postComment(event, {{id}}, 0)">Add comment</button>
+                <a href="javascript:void(0);" onclick="closeForm()" class="linkAsButton">Cancel</a>
+            </div>
+        </article>
+
+        <footer>
+            <a href="{{backLink}}" class="linkAsButton"><< Back</a>
+            <a href="{{editLink}}" class="linkAsButton">Edit</a>
+            <a href="{{deleteLink}}" class="linkAsButton">Delete</a>
+            <a href="#menuTitle" class="linkAsButton">Up to the menu</a>
+        </footer>
+    </div>
+</script>
+<script id="template-article-form" type="text/template">
+    <div class="article-form-template">
+        <article>
+            <h2>{{formTitle}}</h2> <br><br>
+
+            <form id="articleForm">
+                <label for="author">Author:</label>
+                <input type="text" name="author" id="author" value="{{author}}" size="50"
+                       title="Article author, max. length 100 characters."
+                       maxlength="100" placeholder="e.g. Ján Trieska" />
+                <br>
+                <label for="title">Title:</label>
+                <input type="text" name="title" id="title" value="{{title}}" size="50"
+                       maxlength="100" pattern="\S[\S\s]*" placeholder="e.g. My story." required
+                       title="Article title, mandatory item, max. length: 100 characters.
+                The first character must not be a space." />
+                <br>
+                <label for="imageLink">Image (url):</label>
+                <input type="url" name="imageLink" id="imageLink" value="{{imageLink}}" size="50"
+                       title="Image URL, max. length 100 characters." maxlength="100"/>
+                <br>
+                <label></label>
+                <button type="button" id="btShowFileUpload">
+                    Upload image
+                </button>
+
+                <fieldset class="added hiddenElm" id="fsetFileUpload">
+                    <legend>Image Upload</legend>
+                    <input type="file" id="flElm" name="file" accept="image/jpeg, image/png"/>
+                    <br />
+                    <button type="button" id="btFileUpload">
+                        Send image to server </button>
+                    <button type="button" id="btCancelFileUpload">
+                        Cancel uploading </button>
+                </fieldset>
+
+                <br>
+                <label for="content">Article content:</label>
+                <textarea
+                        name="content" id="content" spellcheck="true" lang="sk"
+                        cols="50" rows="20" required
+                        title="Article content, mandatory item, can be plain text or in HTML.">
+                  {{content}}
+                </textarea>
+                <br>
+                <label for="tags">Keywords:</label>
+                <input  type="text" name="tags" id="tags" value="{{tags}}" size="50"
+                        title="Keyword list, comma separated." placeholder="e.g. village, drama" />
+                <br> <br>
+                <button type="reset"> Reset Form </button>
+                <button type="submit"> {{submitBtTitle}} </button>
+
+            </form>
+        </article>
+
+        <footer>
+            <a href="{{backLink}}" class="linkAsButton"><< Back</a>
+            <a href="#menuTitle" class="linkAsButton">Up to the menu</a>
+        </footer>
+    </div>
+</script>
+
+
+<script id="template-addOpinion" type="text/template">
+    <div class="huinya" >
+        <div class="main-content">
+            <h2>Zanechajte svoju spätnú väzbu:</h2>
+            <form method="POST" action="#" id="opnFrm">
+                <fieldset>
+
+                    <div>
+                        <label for="nameElm">Meno:</label>
+                        <input type="text" id="nameElm" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="image_url">Ak máte požiadavku na formát fotografie alebo chcete zdieľať obrázok, vložte adresu URL nižšie:</label>
+                        <input type="url" id="image_url" name="image_url">
+                    </div>
+                </fieldset>
+                <fieldset>
+
+                    <div>
+                        <label for="opnElm">Váš názor:</label>
+                        <textarea id="opnElm" name="opinion" rows="3" cols="50" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <label for="keywords">
+                        Čo by ste sa chceli dozvedieť viac?</label>
+                    <input type="text" id="keywords" name="keywords" list="keywordlist">
+                    <datalist id="keywordlist">
+                        <option value="Osobný rozvoj">
+                        <option value="Finančná gramotnosť">
+                        <option value="Motivácia a inšpirácia">
+                        <option value="Time management">
+                        <option value="Plánovanie cieľov">
+                    </datalist>
+                </fieldset>
+                <div>
+
+                    <label for="marketing">Chcem byť informovaný o nových článkoch</label>
+                    <input type="checkbox" id="marketing" name="marketing">
+                </div>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </div>
+</script>
+<script id="template-opinions" type="text/template">
+    <div class="parasha">
+    <article class="custom-container">
+        <h2>Visitor opinions</h2>
+        <div id="opinionsContainer">
+            {{#.}}
+            <section>
+                <h3>{{name}} </h3>
+                <p><span class="label">Váš názor:</span> {{comment}}</p>
+                <p><span class="label">Email:</span> {{email}}</p>
+                <p><span class="label">URL :</span> {{image_url}}</p>
+                <p><span class="label">Čo by ste sa chceli dozvedieť viac?:</span> {{keywords}}</p>
+                <p><span>{{created}}</span></p>
+                <button class="delete-opinion" data-index="{{index}}">Delete</button>
+            </section>
+            {{/.}}
+            {{^.}}
+            <section>
+                Sorry, no opinions found.
+            </section>
+            {{/.}}
+        </div>
+    </article>
+    </div>
+</script>
+
+
+
+
+<!--JavaScript -->
+<script type="module" src="js/index.js"></script>
+<script src="js/addOpinion.js"></script>
+<script src="js/articleFormsHandler.js"></script>
+
+
+</body>
+</html>

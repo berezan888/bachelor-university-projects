@@ -1,0 +1,824 @@
+.hero-section_i {
+    background: center / cover url('fig/happy.jpg');
+    text-align: center;
+    display: flex;
+    height: 25em;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: #000 0.125em 0.125em 0.2rem;
+    position: relative;
+}
+
+aside {
+    width: 80%; /* Sidebar width */
+    background-color: #d5d6fd;
+    padding: 1em;
+    min-height: 100vh; /* Full height of the viewport */
+    background-repeat: repeat-y;
+    background: url("fig/cloudy.png") ;
+    background-size: 16rem 16rem;
+}
+.asidindx{
+    background: url("fig/cloudy.png") ;
+    background-size: 16rem 16rem;
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    min-width: 20rem; /* Минимальная ширина контейнера */
+    max-width: 100rem;
+}
+.main {
+
+    background: center / cover url('fig/mountin.jpg');
+    text-align: center;
+    padding: 1rem;
+    font-size: xx-small;
+}
+footer {
+
+    text-align: center;
+    padding: 1rem;
+    font-size: xx-small;
+}
+
+
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Ensures space between the logo and navigation */
+    align-items: center;
+    background: center / cover url('fig/mountin.jpg'); /* Dark background for the header */
+    color: #bbbce3;
+    padding: 0.1em 1em;
+
+}
+
+.h1i{
+    color: #d0d8df;
+    text-shadow:
+            0.125rem 0.125rem 0.25rem #4f4842,         /* Тень вправо и вниз */
+            -0.125rem -0.125rem 0.25rem rgb(79, 72, 66), /* Тень влево и вверх */
+            0.125rem -0.125rem 0.25rem rgb(79, 72, 66), /* Тень вправо и вверх */
+            -0.125rem 0.125rem 0.25rem rgb(79, 72, 66); /* Тень влево и вниз */
+    font-family: Arial, sans-serif;
+    font-size: 237.5%;
+    font-weight: 1000; /*Насыщенность шрифта*/
+
+}
+
+p{
+    line-height: 143.75%; /*Межстрочный интервал*/
+    color: #000000;
+    font-family: Candara, sans-serif;
+    font-weight: 500;
+    font-size: 120%;
+
+}
+body{
+    font-family: Candara, sans-serif;
+    background-color: #ffffca;
+}
+
+/* Общий сброс стилей */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер меню */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* Кнопка меню */
+#menuTitle {
+
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 0.5em 1em; /* Отступы для увеличения "кнопки" */
+    background-color: #fdfdfd; /* Синий фон */
+    color: #babbe2; /* Белый текст */
+    border: none; /* Без рамки */
+    margin-left: 2em;
+    border-radius: 0.5rem; /* Скругленные углы */
+    cursor: pointer; /* Указатель мыши */
+     /* Закругленные края */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* Ховер эффект для кнопки */
+#menuTitle:hover {
+    color: #fdfdfd;
+    background-color: #fdd42f; /* Темнее при наведении */
+}
+
+/* Навигация */
+#menuIts {
+
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+
+    position: absolute;
+    top: 100%; /* Расположить под кнопкой */
+    left: 0;
+    background-color: #fbfbfb; /* Белый фон */
+    border: 1px solid #fbfbfb; /* Тонкая рамка */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    border-radius: 5px; /* Закругленные края */
+    display: none; /* По умолчанию скрыто */
+    z-index: 1000;
+}
+
+/* Ссылки внутри меню */
+#menuIts a {
+    color: #babbe2;
+    display: block; /* Блочная структура */
+
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 15px; /* Отступы */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход */
+    border-bottom: 1px solid #ddd; /* Разделитель */
+}
+
+/* Последний элемент без разделителя */
+#menuIts a:last-child {
+    border-bottom: none;
+}
+
+/* Ховер эффект для ссылок */
+#menuIts a:hover {
+    background-color: #f8f9fa; /* Светлый серый фон */
+    color: #fdd42f;
+}
+
+/* Показ меню */
+.menu:hover #menuIts {
+    display: block; /* Показываем меню при наведении на контейнер */
+}
+
+.strongi{
+    font-weight: 900;
+    color: #fd7bdc;
+    font-size: larger;
+    text-shadow: 0.125rem 0.125rem 0.3125rem rgb(176, 198, 186);
+}
+#navigacia {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f8f9fa; /* Цвет фона навигации */
+    padding: 1.25rem; /* Отступы вокруг навигации (20px) */
+    border-radius: 0.5rem; /* Скругление углов (8px) */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для навигации (0px 4px 10px) */
+}
+
+.link-container {
+    display: flex; /* Flexbox для размещения карточек */
+    flex-direction: column; /* Размещаем карточки по вертикали */
+    gap: 0.625rem; /* Расстояние между карточками (10px) */
+}
+.link-box {
+    padding: 0.9375rem; /* Отступы внутри карточки (15px) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для карточки (0px 4px 10px) */
+    position: relative; /* Для абсолютного позиционирования псевдоэлемента */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Плавные эффекты */
+
+}
+.link-box:hover {
+    background-color: #9ba6bf;
+    transform: translateY(-0.3125rem); /* Легкий подъем карточки при наведении (5px) */
+}
+.link-box a {
+    color: #477b9c; /* Цвет ссылки */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 1.125rem; /* Размер текста (18px) */
+    display: block; /* Ссылка занимает всю карточку */
+    transition: color 0.3s ease; /* Плавная смена цвета */
+    position: relative; /* Для выплывающей линии */
+}
+.link-box a::after {
+    content: ''; /* Псевдоэлемент */
+    position: absolute;
+    left: 0;
+    bottom: -0.3125rem; /* Линия будет появляться чуть ниже текста (-5px) */
+    width: 100%;
+    height: 0.125rem; /* Высота линии (2px) */
+    background-color: #477b9c; /* Цвет линии */
+    transform: scaleX(0); /* Изначально линия скрыта */
+    transition: transform 0.3s ease; /* Плавный эффект появления */
+}
+.link-box:hover a {
+    color: white; /* Изменение цвета ссылки при наведении на карточку */
+}
+.link-box a:hover::after {
+    transform: scaleX(1); /* Линия увеличивается по ширине при наведении */
+}
+
+#navigacia h3 {
+    margin-bottom: 0.9375rem; /* Отступ снизу заголовка (15px) */
+    color: #ff7cdd;
+    font-size: 3rem; /* Размер шрифта (300%) */
+    margin-top: 0.0625rem; /* Отступ сверху (1px) */
+    text-shadow:
+            0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень вправо и вниз (2px 2px 5px) */
+            -0.125rem -0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень влево и вверх (-2px -2px 5px) */
+            0.125rem -0.125rem 0.3125rem rgba(0, 0, 0, 0.3), /* Тень вправо и вверх (2px -2px 5px) */
+            -0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3); /* Тень влево и вниз (-2px 2px 5px) */
+}
+h2{
+    color: #000;
+    font-weight: 900;
+
+}
+a{
+
+    font-weight: 900;
+    font-family: Candara, sans-serif;
+}
+
+
+.text-with-background {
+    background-color: #f0f8ff; /* Цвет подложки */
+    padding: 0 1rem; /* Отступы внутри подложки (0% 16px будет 0 1rem) */
+    margin-top: 1rem; /* Отступ сверху (1rem) */
+    border-radius: 0.5rem; /* Скругленные углы (8px) */
+    display: inline-block; /* Подложка будет по размеру текста */
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1); /* Тень для глубины (0px 4px 10px) */
+    font-size: 1.125rem; /* Размер шрифта (18px) */
+    color: #477b9c; /* Цвет текста */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.text-with-background:hover {
+    transform: scale(1.05); /* Увеличение текста и подложки */
+    background-color: #ff7cdd; /* Слегка меняем цвет подложки */
+    box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2); /* Увеличиваем тень (0px 8px 15px) */
+    color: #fff; /* Цвет текста при наведении */
+}
+.shrift{
+    color: inherit;
+    font-style: italic
+}
+
+
+
+
+.articles-container {
+    margin-top: 2rem; /* Отступ сверху */
+    margin-bottom: 2rem;
+    width: 60rem; /* Фиксированная ширина */
+    margin-left: auto; /* Центрируем */
+    margin-right: auto; /* Центрируем */
+    padding: 1rem;
+    background-color: #f4f4f9; /* Нежный фон */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+
+}
+
+.articles-container #findArt {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.articles-container .form__field {
+    width: 100%;
+    max-width: 54rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.articles-container article {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.articles-container article h2 {
+    font-size: 1.5rem;
+    color: #fb7adb;
+    margin-bottom: 0.5rem;
+}
+
+.articles-container article h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.articles-container article h2 a:hover {
+    color: #ff34ce;
+}
+
+.articles-container article p {
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.articles-container .pagination a {
+    display: inline-block;
+    width: 8rem; /* Фиксированная ширина */
+    text-align: center;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem;
+    background-color: #ffef72;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.articles-container .pagination a:hover {
+    background-color: #ffb784;
+}
+
+.articles-container footer .linkAsButton {
+    display: inline-block;
+    width: 12rem; /* Фиксированная ширина */
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #b9cac0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.articles-container footer .linkAsButton:hover {
+    background-color: #76fb76;
+}
+
+
+
+
+
+
+
+/* Стили для шаблона статьи */
+.article-template {
+    width: 60rem; /* Фиксированная ширина */
+    margin: 2rem auto; /* Центрирование контейнера с отступом сверху и снизу */
+    padding: 2rem;
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 1rem; /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Заголовок статьи */
+.article-template h3 {
+    font-size: 2rem;
+    color: #fb7adb; /* Синий цвет для заголовка */
+    margin-bottom: 1rem;
+}
+
+/* Автор статьи */
+.article-template p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Если изображение присутствует */
+.article-template figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.article-template img {
+    max-width: 100%; /* Чтобы изображение занимало всю ширину контейнера */
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+/* Контент статьи */
+.article-template .content {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #444;
+    font-family: Candara, sans-serif;
+}
+
+/* Список тегов */
+.article-template p.tags {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 1.5rem;
+}
+
+/* Стили для комментариев */
+.article-template .article-form-screen--comments {
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article-template .article-form-screen--comments-info {
+    margin-bottom: 1rem;
+}
+
+.article-template .article-form-screen--comments h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.article-template .article-form-screen--comments p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.article-template .article-form-screen--comments h3 {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Стиль для кнопки добавления комментария */
+.article-template #addComment {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #b8c9bf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.article-template #addComment:hover {
+    background-color: #728a7d;
+}
+
+/* Стиль для формы комментария */
+.article-template #form-wrap {
+    display: none;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.article-template .form__group {
+    margin-bottom: 1.5rem;
+}
+
+.article-template .form__label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: Candara,sans-serif;
+}
+
+.article-template .form__field {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.article-template .form__field:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Стиль для кнопок в форме */
+.article-template button,
+.article-template a.linkAsButton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f979da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.article-template button:hover,
+.article-template a.linkAsButton:hover {
+    background-color: #ff3fd3;
+}
+
+/* Стили для footer */
+.article-template footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.article-template footer a {
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.article-template footer a:hover {
+    color: #ffffff;
+}
+
+
+
+
+/* Основной контейнер для формы */
+.article-form-template {
+    width: 60rem; /* Фиксированная ширина */
+    margin: 2rem auto; /* Центрирование и отступы */
+    padding: 2rem;
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 1rem; /* Скругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Заголовок формы */
+.article-form-template h2 {
+    font-size: 2rem;
+    color: #fb7adb; /* Синий цвет */
+    margin-bottom: 1.5rem;
+}
+
+/* Метки формы */
+.article-form-template label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Поля ввода формы */
+.article-form-template input[type="text"],
+.article-form-template input[type="url"],
+.article-form-template input[type="file"],
+.article-form-template textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-form-template input[type="text"]:focus,
+.article-form-template input[type="url"]:focus,
+.article-form-template input[type="file"]:focus,
+.article-form-template textarea:focus {
+    border-color: #fb7adb; /* Цвет при фокусе */
+    outline: none;
+}
+
+/* Кнопки */
+.article-form-template button {
+    padding: 0.75rem 1.5rem;
+    background-color: #b9cac0; /* Зеленая кнопка */
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.article-form-template button:hover {
+    background-color: #74837c; /* Темный зеленый при наведении */
+}
+
+/* Кнопки для отмены и отправки файла */
+.article-form-template #btShowFileUpload,
+.article-form-template #btFileUpload,
+.article-form-template #btCancelFileUpload {
+    padding: 0.5rem 1rem;
+    background-color: #fb7adb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.article-form-template #btShowFileUpload:hover,
+.article-form-template #btFileUpload:hover,
+.article-form-template #btCancelFileUpload:hover {
+    background-color: #ff2dc9; /* Синий цвет при наведении */
+}
+
+/* Стили для добавленного блока загрузки файла */
+.article-form-template fieldset.added {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    margin-top: 1.5rem;
+}
+
+.article-form-template legend {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Стили для текстового поля */
+.article-form-template textarea {
+    resize: vertical;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Стили для футера формы */
+.article-form-template footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.article-form-template footer a {
+    font-size: 1rem;
+    color: #fb7adb;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.article-form-template footer a:hover {
+    color: #ff27ca;
+}
+
+
+
+/* Общий контейнер */
+.parasha {
+    margin-top: 2rem;
+    background-color: #FFFAE3; /* Светло-жёлтый фон */
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+    font-family: Arial, sans-serif;
+}
+
+/* Текст заголовков */
+.parasha h2 {
+
+    color: #FF6EC7; /* Розовый */
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Блок для мнений */
+#opinionsContainer section {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+
+}
+
+#opinionsContainer section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Текст заголовков в секциях */
+#opinionsContainer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Стилизация текста */
+#opinionsContainer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+#opinionsContainer .label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Кнопка удаления */
+.delete-opinion {
+    background-color: #FF6EC7; /* Розовая кнопка */
+    color: #FFF;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-opinion:hover {
+    background-color: #E05CA6; /* Темнее при наведении */
+}
+
+.huinya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.main-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form fieldset {
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #fb7adb;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff1ac5;
+}
+
+form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+form button[type="reset"]:hover {
+    background-color: #5a6268;
+}
