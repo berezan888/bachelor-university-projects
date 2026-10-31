@@ -2,6 +2,7 @@
 
 * **Course Topic:** Information Systems, Business Problem Solving, Knowledge Management & Strategic Analysis.
 * **Project Concept:** **MAU** — conceptual design and business model for a smart menstrual cycle & women's health tracking app.
+* https://youtu.be/3_YSAAIJnDY
 * **Frameworks Used:** Value Analysis, SWOT Analysis, Balanced Scorecard (BSC), Business Model Canvas (BMC).
 
 ---
