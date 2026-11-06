@@ -7,9 +7,9 @@ A rule-based expert system designed to assist users in identifying potential eye
 * **Domain:** Medical Diagnostics (Ophthalmology)
 
 ## 📂 Project Structure & Components
-* **Documentation (`Documentation`):** The complete technical and functional specification is provided in the `01 Diagnostika očných ochorení.pdf`.
-* **Scheme (`Scheme`):** The decision tree and inference network logic mapping symptoms to hypotheses and final conclusions.
-* **System (`System`):** The "Diagnostika očných ochorení" expert system, built to evaluate user responses (numerical and yes/no questions) and recommend potential diagnoses or advise consulting an eye specialist.
+* `Documentation`: The complete technical and functional specification is provided in the `Diagnostika očných ochorení.pdf`.
+* `Scheme`: The decision tree and inference network logic mapping symptoms to hypotheses and final conclusions.
+* `System`: The "Diagnostika očných ochorení" expert system, built to evaluate user responses (numerical and yes/no questions) and recommend potential diagnoses or advise consulting an eye specialist.
 
 ## 🚀 Features
 * Symptom-based questioning flow (vision quality, pain scale, redness, discharge, sensitivity to light, etc.).
