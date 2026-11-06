@@ -1,0 +1,11 @@
+breed,housing_size,prefers_small,coat_care_ready,activity_important,dog_friendly,good_with_children,bark_important,trainability,outdoor_time
+Čivava,byt,True,False,False,False,False,False,True,False
+Jorkšírsky teriér,byt,True,True,False,True,True,True,True,False
+Shih-tzu,byt,True,True,False,True,True,False,False,False
+Mops,byt,True,False,False,True,True,False,False,False
+Francúzsky buldoček,byt,True,False,False,True,True,False,True,False
+Korgi,byt,True,False,True,True,True,True,True,True
+Beagle,dom,True,False,True,True,True,True,False,True
+Labrador,dom,False,False,True,True,True,False,True,True
+Zlatý retríver,dom,False,True,True,True,True,False,True,True
+Nemecký ovčiak,dom,False,True,True,False,False,True,True,True
