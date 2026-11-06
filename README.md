@@ -10,4 +10,11 @@ This repository stores my academic coding assignments and projects completed dur
 - Laboratory assignments
 - Bachelor's coursework and projects
 
+### 🛠️ Tech Stack & Tools
+
+* **Programming Languages:** Python, C, C++, Java, JavaScript, HTML, CSS, SQL
+* **IDEs & Editors:** VS Code, PyCharm, CLion, IntelliJ IDEA, WebStorm, Vim, Jupyter Notebook
+* **Tools & Environments:** Git, GitHub, Makefile, ES-Builder
+* **Data & Markup:** CSV, JSON, Markdown
+
 **Goal:** Demonstrating coding skills, problem-solving abilities, and continuous learning in computer science.
